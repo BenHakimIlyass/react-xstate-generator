@@ -38,6 +38,8 @@ Everytime you create a state you have to add manually two lines of code in `/xst
 - Calling your state hook
 - Return it as object
 
+## Example
+
 ```jsx
 //index.ts
 import useTodoList from "./todolist/useTodoList";
@@ -55,8 +57,6 @@ export default () => {
   return { todoList: dist(todoList, todoStates, getTodoList) };
 };
 ```
-
-# Example
 
 You will find in your state folder `/xstate/yourState/` two files **machine.ts** and **useYourState.ts.**
 
@@ -93,4 +93,4 @@ export default function App() {
 
 That's it !!
 
-You will find a live demo here.
+You will find a live demo [here](https://codesandbox.io/s/new-mountain-gt5l4).
